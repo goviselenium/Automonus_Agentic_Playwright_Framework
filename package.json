@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/cli.ts",
+    "start": "node dist/src/cli.js",
     "test": "playwright test",
-    "run:scenario": "ts-node src/cli.ts run"
+    "run:scenario": "node dist/src/cli.js run"
   },
   "keywords": [
     "playwright",

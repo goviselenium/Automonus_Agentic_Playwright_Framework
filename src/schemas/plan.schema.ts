@@ -16,8 +16,8 @@ export const AtomicStepSchema = z.object({
   stepId: z.string().describe('Unique step identifier, e.g., step_001'),
   intent: StepIntentSchema.describe('Action or assertion intent'),
   targetDescription: z.string().describe('Human-readable target element description'),
-  inputValue: z.string().optional().describe('Input value for typing or selecting'),
-  expectedValue: z.string().optional().describe('Expected text or URL value for assertion'),
+  inputValue: z.string().nullable().optional().transform(v => v === null ? undefined : v).describe('Input value for typing or selecting'),
+  expectedValue: z.string().nullable().optional().transform(v => v === null ? undefined : v).describe('Expected text or URL value for assertion'),
   criticality: z.enum(['CRITICAL', 'OPTIONAL']).default('CRITICAL'),
   timeoutMs: z.number().default(30000)
 });

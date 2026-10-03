@@ -1,1 +1,79 @@
-{}
+{
+  "www.saucedemo.com__username_field": {
+    "targetKey": "www.saucedemo.com__username_field",
+    "lastKnownLocator": "[data-test='username']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T03:52:02.059Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com__password_field": {
+    "targetKey": "www.saucedemo.com__password_field",
+    "lastKnownLocator": "[data-test='password']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T03:52:51.219Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com__login_button": {
+    "targetKey": "www.saucedemo.com__login_button",
+    "lastKnownLocator": "[data-test='login-button']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T03:53:38.465Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com__2__enter_username__tomsmith__into_username_field_": {
+    "targetKey": "www.saucedemo.com__2__enter_username__tomsmith__into_username_field_",
+    "lastKnownLocator": "[data-test=\"username\"], input[name=\"username\"]",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T03:55:44.559Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___username_input__with_value__standard_user_": {
+    "targetKey": "www.saucedemo.com___username_input__with_value__standard_user_",
+    "lastKnownLocator": "[data-test='username']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T04:06:15.048Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___password_input__with_value__secret_sauce_": {
+    "targetKey": "www.saucedemo.com___password_input__with_value__secret_sauce_",
+    "lastKnownLocator": "[data-test='password']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T04:07:08.950Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___login_button_": {
+    "targetKey": "www.saucedemo.com___login_button_",
+    "lastKnownLocator": "[data-test='login-button']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T04:58:37.091Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___backpack_item__with_value__sauce_labs_backpack_": {
+    "targetKey": "www.saucedemo.com___backpack_item__with_value__sauce_labs_backpack_",
+    "lastKnownLocator": "[data-test='username']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T04:59:41.124Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___add_to_cart_button_": {
+    "targetKey": "www.saucedemo.com___add_to_cart_button_",
+    "lastKnownLocator": "[data-test='login-button']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T05:00:54.891Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___checkout_button_": {
+    "targetKey": "www.saucedemo.com___checkout_button_",
+    "lastKnownLocator": "[data-test='login-button']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T05:01:45.114Z",
+    "successfulRuns": 1
+  },
+  "www.saucedemo.com___order_total_text_": {
+    "targetKey": "www.saucedemo.com___order_total_text_",
+    "lastKnownLocator": "[data-test='username']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T05:02:45.938Z",
+    "successfulRuns": 1
+  }
+}

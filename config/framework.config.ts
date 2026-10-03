@@ -8,6 +8,7 @@ export interface FrameworkConfig {
   llmProvider: string;
   openAiApiKey: string;
   llmModel: string;
+  ollamaHost: string;
   headless: boolean;
   browser: 'chromium' | 'firefox' | 'webkit';
   slowMo: number;
@@ -23,6 +24,7 @@ export const frameworkConfig: FrameworkConfig = {
   llmProvider: process.env.LLM_PROVIDER || 'openai',
   openAiApiKey: process.env.OPENAI_API_KEY || '',
   llmModel: process.env.LLM_MODEL || 'gpt-4o',
+  ollamaHost: process.env.OLLAMA_HOST || 'http://localhost:11434',
   headless: process.env.HEADLESS !== 'false',
   browser: (process.env.BROWSER as 'chromium' | 'firefox' | 'webkit') || 'chromium',
   slowMo: parseInt(process.env.SLOW_MO || '0', 10),

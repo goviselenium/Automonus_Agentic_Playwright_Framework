@@ -195,15 +195,24 @@ export class ExecutionPipeline {
       }
     } finally {
       // 5. Teardown & Stop Tracing
-      const traceZipPath = path.join(outputDir, 'traces', 'trace.zip');
-      const tracesDir = path.dirname(traceZipPath);
-      if (!fs.existsSync(tracesDir)) {
-        fs.mkdirSync(tracesDir, { recursive: true });
+      try {
+        const traceZipPath = path.join(outputDir, 'traces', 'trace.zip');
+        const tracesDir = path.dirname(traceZipPath);
+        if (!fs.existsSync(tracesDir)) {
+          fs.mkdirSync(tracesDir, { recursive: true });
+        }
+        await this.browserManager.stopTracing(traceZipPath);
+      } catch (e: any) {
+        Logger.warn(`Tracing stop warning: ${e.message}`);
       }
-      await this.browserManager.stopTracing(traceZipPath);
-      await this.browserManager.close();
 
-      // 6. Generate Reports
+      try {
+        await this.browserManager.close();
+      } catch (e: any) {
+        Logger.warn(`Browser close warning: ${e.message}`);
+      }
+
+      // 6. Generate Reports (Guaranteed execution)
       this.htmlReporter.generateReport(outputDir, plan, stepLogs, healingReports, {
         type: options.browser || frameworkConfig.browser,
         headless: options.headed ? false : frameworkConfig.headless
