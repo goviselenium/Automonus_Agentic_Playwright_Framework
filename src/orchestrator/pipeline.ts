@@ -217,7 +217,7 @@ export class ExecutionPipeline {
         type: options.browser || frameworkConfig.browser,
         headless: options.headed ? false : frameworkConfig.headless
       });
-      this.auditReporter.generateAuditReport(outputDir, healingReports);
+      this.auditReporter.generateAuditReport(outputDir, stepLogs, healingReports);
     }
 
     return overallSuccess;

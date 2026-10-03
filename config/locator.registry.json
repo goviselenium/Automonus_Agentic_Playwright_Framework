@@ -75,5 +75,12 @@
     "fallbackLocators": [],
     "lastVerified": "2026-10-03T05:02:45.938Z",
     "successfulRuns": 1
+  },
+  "www.saucedemo.com___checkout_total__with_value___32_39_": {
+    "targetKey": "www.saucedemo.com___checkout_total__with_value___32_39_",
+    "lastKnownLocator": "[data-test='login-credentials-container']",
+    "fallbackLocators": [],
+    "lastVerified": "2026-10-03T05:45:43.151Z",
+    "successfulRuns": 1
   }
 }
