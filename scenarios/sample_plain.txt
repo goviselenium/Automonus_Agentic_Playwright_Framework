@@ -1,0 +1,5 @@
+Navigate to base URL.
+Log in with standard user credentials.
+Add to cart button for Sauce Labs Backpack.
+Shopping cart link.
+Checkout button.

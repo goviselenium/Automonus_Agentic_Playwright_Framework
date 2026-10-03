@@ -1,0 +1,11 @@
+{
+  "testCaseId": "TC-001",
+  "title": "E-Commerce Checkout Verification",
+  "baseUrl": "https://www.saucedemo.com",
+  "requirements": [
+    "Log in with standard user credentials",
+    "Add Sauce Labs Backpack to cart",
+    "Open shopping cart link",
+    "Click checkout button"
+  ]
+}

@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build Output
+dist/
+
+# Test Artifacts & Videos/Traces
+artifacts/
+
+# Environment and API keys
+.env
+
+# System Files
+.DS_Store
+Thumbs.db
